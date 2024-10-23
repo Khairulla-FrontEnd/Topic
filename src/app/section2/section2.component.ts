@@ -6,11 +6,12 @@ import {
   animate,
   transition
 } from "@angular/animations";
+import { NgOptimizedImage, CommonModule } from '@angular/common'
 
 @Component({
   selector: 'app-section2',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage, CommonModule],
   templateUrl: './section2.component.html',
   styleUrl: './section2.component.css',
   animations:[
