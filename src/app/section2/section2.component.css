@@ -1,0 +1,92 @@
+#section-2{
+    font-family:"Open Sans",sans-serif;
+    background-color:#80d0c7;
+    border-bottom-left-radius:120px;
+    border-bottom-right-radius:120px;
+}
+.card-title h4{
+    font-family:"Montserrat", sans-serif;
+}
+.btn-primary{
+    background-color:#00b0ff;
+}
+.card-text{
+    color:#717275;
+}
+.row{
+    bottom:100px;
+}
+.bi-bookmark{
+    font-size:28px;
+}
+.btn-secondary{
+    background-color:#536dfe;
+}
+.btn-success{
+    background-color:#80d0c7;
+    transition:all 0.3s ease;
+}
+.btn-success:hover{
+    background-color:#13547a;
+}
+.bi-bookmark{
+    transition:all 0.3s ease;
+}
+.bi-bookmark:hover{
+    color:#80d0c7;
+}
+.card-img{
+    background-position:center !important;
+    object-fit:cover !important;
+}
+.card-bg{
+    background-image:url('../../../public/images/businesswoman-using-tablet-analysis.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+}
+.card-body{
+    position:relative;
+    z-index:1;
+}
+.card-footer{
+    position:relative;
+    z-index:1;
+}
+.bgs{
+    background-image:linear-gradient(15deg, rgb(19, 84, 122) 0%, rgb(128, 208, 199) 100%);
+    width:100%;
+    height:100%;
+    opacity:0.8;
+}
+@media (max-width:768px){
+    .card-title{
+        font-size:16px !important;
+    }
+    .card-text{
+        font-size:12px !important;
+    }
+    .btn-primary,.btn-secondary{
+        font-size:12px !important;
+    }
+    .btn-lg{
+        font-size:16px !important;
+    }
+    .crd-lnk h5{
+        font-size:16px !important;
+    }
+    .crd-icns .btn{
+        font-size:12px !important;
+    }
+    .bi-bookmark{
+        font-size:16px !important;
+    }
+}
+@media (max-width:576px){
+
+}

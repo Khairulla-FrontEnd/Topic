@@ -1,0 +1,60 @@
+<section id="section-2">
+    <div class="container">
+        <div class="row row-cols-lg-2 row-cols-1 position-relative justify-content-center pt-5 pt-sm-0" (mouseout)="unhover()" (mouseout)="unhover2()">
+            <div class="col-lg-4 mb-lg-0 mb-4">
+                <a href="#" class="text-decoration-none">
+                    <div class="card h-100 border border-0 rounded-5 p-2 shadow-lg position-relative" [@hoverUnhover]="isHovered ? 'hovered' : 'unhovered'" (mouseover)="hover()">
+                        <div class="card-body">
+                            <div class="card-title d-flex mb-2 justify-content-between">
+                                <h4 class="fw-semibold">
+                                    Web Design
+                                </h4>
+                                <button class="btn border border-0 btn-sm btn-primary fw-semibold">14</button>
+                            </div>
+                            <h5 class="card-text fw-normal w-75">When you search for free CSS templates, you will notice that TemplateMo is one of the best websites.</h5>
+                        </div>
+                        <img src="./images/topics/undraw_Remote_design_team_re_urdx.png" alt="card-img1" class="card-img-bottom my-4 object-fit-cover" style="height:220px;">
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-7">
+                <a href="#" class="text-decoration-none">
+                    <div class="card h-100 border-0 rounded-5 p-2 text-white shadow-lg position-relative overflow-hidden" [@hoverUnhover]="isHovered2 ? 'hovered' : 'unhovered'" (mouseover)="hover2()">
+                        <div class="card-bg">
+                            <div class="bgs"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title d-flex mb-2 align-items-center justify-content-between">
+                                <h4 class="fw-semibold">Finance</h4>
+                                <button class="btn border border-0 btn-sm btn-secondary fw-semibold">25</button>
+                            </div>
+                            <h5 class="card-text fw-normal mb-3 w-75 text-white">
+                                Topic Listing Template includes homepage, listing page, detail page, and contact page. You can feel free to edit and adapt for your CMS requirements.
+                            </h5>
+                            <button class="btn btn-lg mt-3 fw-semibold btn-success border border-0 rounded-pill">Learn More</button>
+                        </div>
+                        <footer class="card-footer border border-0 bg-transparent d-flex align-items-center justify-content-between mb-3">
+                            <div class="crd-lnk d-flex align-items-center gap-4">
+                               <h5 class="fw-normal">Share:</h5>
+                               <div class="crd-icns d-flex align-items-center gap-2">
+                                <div class="btn btn-success border border-0 rounded-circle">
+                                    <i class="bi bi-twitter"></i>
+                                </div>
+                                <div class="btn btn-success border border-0 rounded-circle">
+                                    <i class="bi bi-facebook"></i>
+                                </div>
+                                <div class="btn btn-success border border-0 rounded-circle">
+                                    <i class="bi bi-pinterest"></i>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="card-fv">
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </footer>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

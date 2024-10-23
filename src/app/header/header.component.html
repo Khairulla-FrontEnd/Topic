@@ -1,0 +1,38 @@
+<nav class="navbar fixed-top navbar-expand-lg" (mouseout)="toggleClose()">
+    <div class="container">
+      <a class="navbar-brand fs-2 fw-bold" href="#"><i class="bi bi-app-indicator"></i> Topic</a>
+      <button class="navbar-toggler collapsed order-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-lg-5 mb-2 mb-lg-0 text-uppercase fw-medium">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Browse Topics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Faqs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown position-relative">
+              <a class="nav-link dropdown-toggle d-flex align-items-center gap-1" href="#" role="button" (mouseover)="toggleOpen()">
+                Pages <i class="bi bi-chevron-down"></i>
+              </a>
+              <div class="dropdown-pattern position-absolute" (mouseover)="toggleOpen()" [@openClose]="isOpen ? 'open' : 'closed'"></div>
+              <ul class="dropdown-menu border border-0" (mouseover)="toggleOpen()" [@openClose]="isOpen ? 'open' : 'closed'">
+                  <li><a class="dropdown-item bg-transparent" href="#">Topics Listing</a></li>
+                  <li><a class="dropdown-item bg-transparent" href="#">contact form</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="bi bi-person order-1 ms-auto me-4 fs-3 bg-white rounded-circle px-2 position-relative"></a>
+    </div>
+  </nav>

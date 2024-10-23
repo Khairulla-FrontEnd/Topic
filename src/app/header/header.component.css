@@ -1,0 +1,69 @@
+nav{
+    font-family:"Montserrat", sans-serif !important;
+    border-bottom:0.8px solid rgba(128,208,199,0.35);
+}
+.bi-person{
+    color:#13547a;
+    transition:all 0.3s ease;
+    cursor:pointer;
+}
+.bi-person:hover{
+    color:white;
+    background-color:#13547a !important;
+}
+.nav-link{
+    color:white !important;
+    transition:all 0.3s ease;
+    font-size:14px;
+}
+.nav-link:hover{
+    color:#13547a !important;
+}
+
+.active{
+    color:#13547a !important;
+}
+.nav-item{
+    padding:10px;
+}
+.dropdown-item{
+    color:gray !important;
+}
+.dropdown-item:hover{
+    color:#13547a !important;
+}
+.dropdown-menu{
+    top:150px;
+    display:none;
+}
+.dropdown-pattern{
+    width:50px;
+    height:50px;
+    background-color:white;
+    transform:rotate(45deg);
+    left:30px;
+    display:none;
+    top:150px;
+}
+.dropdown-toggle::after{
+      visibility:hidden;
+      position:absolute;
+}
+@media (max-width:992px){
+    nav{
+        background-image:none;
+        background-color:#80d0c7;
+    }
+.dropdown-menu,.dropdown-pattern{
+    top:50px !important;
+    display:block !important;
+    opacity:1 !important;
+}
+.dropdown-pattern{
+    z-index:-1 !important;
+}
+.dropdown-menu{
+    max-width:235px;
+    z-index:1 !important;
+}
+}

@@ -1,0 +1,40 @@
+#hero{
+    background-image:linear-gradient(15deg, rgb(19, 84, 122) 0%, rgb(128, 208, 199) 100%);
+    padding-block:150px;
+    font-family:"Montserrat",sans-serif;
+}
+.hero-text{
+    color:#13547a;
+}
+.keyword{
+    font-family:"Open Sans",sans-serif;
+    padding-block:13px;
+    padding-right:16px;
+}
+.keyword:focus{
+    border:0 !important;
+    outline:none !important;
+    box-shadow:none !important;
+}
+.btn-primary{
+    background-color:#80d0c7;
+    transition:all 0.3s ease;
+}
+.btn-primary:hover{
+    background-color:#13547a;
+}
+@media (max-width: 768px) {
+    .font{
+        font-size:14px !important;
+    }
+    .keyword{
+        font-size:14px !important;
+        padding-block:0px !important;
+        padding-inline:0px !important;
+    }
+}
+@media (max-width:576px){
+    #hero{
+        padding-bottom:60px;
+    }
+}
