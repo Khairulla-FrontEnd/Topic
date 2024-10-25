@@ -1,0 +1,97 @@
+#section-3{
+    font-family:'Montserrat',sans-serif;
+    padding-block:100px;
+}
+.section3-title{
+    font-weight:700;
+    font-size:46px;
+}
+.nav-link{
+    color:#717275;
+    font-size:20px !important;
+    padding:15px 25px;
+    font-family:'Open Sans',sans-serif;
+    transition:all 0.3s ease;
+    border-radius:0;
+    border-bottom:0.8px solid white;
+}
+.active{
+    color:#13547a !important;
+    border:0;
+    border-radius:0;
+    background-color:transparent !important;
+    border-bottom:0.8px solid #13547a !important;
+}
+.nav-link:hover{
+    border:0;
+    border-radius:0;
+    border-bottom:0.8px solid #13547a !important;
+    color:#13547a !important;
+}
+.btn-primary{
+    border:0;
+}
+.card-text{
+    font-family:'Open Sans',sans-serif;
+    color:#717275;
+    font-size:20px;
+}
+.col{
+    transition:all 0.3s ease;
+    position:relative;
+    bottom:0;
+}
+.col:hover{
+    bottom:10px;
+}
+.finance-card{
+    background-image:linear-gradient(15deg, rgb(19, 84, 122) 0%, rgb(128, 208, 199) 100%);
+}
+.btn-secondary{
+    background-color:#80D0C7;
+    color:white;
+    border:0;
+    transition:all 0.3s ease;
+}
+.btn-secondary:hover{
+    background-color:#13547a;
+}
+.bi-bookmark{
+    transition: all 0.3s ease;
+}
+.bi-bookmark:hover{
+    color:#13547a
+}
+@media (max-width:992px){
+    .card-title h4{
+        font-size:18px !important;
+    }
+    .card-title p{
+        font-size:12px !important;
+    }
+    .card-text{
+        font-size:14px;
+    }
+    .section3-title{
+        font-size: 30px;
+    }
+    .nav-link{
+        font-size:14px !important;
+        padding-block:10px;
+        padding-inline: 16px;
+    }
+    .btn-lg{
+        font-size:16px !important;
+    }
+    .btn-sm{
+        font-size: 12px !important;
+    }
+    .share{
+        font-size: 16px !important;
+    }
+}
+@media (max-width:576px){
+    .nav-link{
+        padding-inline:12px;
+    }
+}

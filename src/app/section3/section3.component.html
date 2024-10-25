@@ -1,0 +1,104 @@
+<section id="section-3">
+    <h1 class="section3-title mb-4 text-center">Browse Topics</h1>
+    <div class="container-fluid">
+        <div class="card border border-0" id="main-card">
+            <div class="card-header bg-transparent p-0 mb-4">
+                <ul class="nav nav-pills card-header-pills justify-content-center">
+                    @for(item of links; track $index){
+                        @if(active === $index){
+                            <li class="nav-item" role="button">
+                                <a class="nav-link active">
+                                    {{item.title}}
+                                </a>
+                            </li>
+                        }@else{
+                            <li class="nav-item" role="button" (click)="setActive(item.id)" (click)="setAnimateTrue()">
+                                <a class="nav-link">
+                                    {{item.title}}
+                                </a>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+            <div class="card-body container" [@changeUnchange]="changed ? 'changed' : 'unchanged'">
+                <div class="row gy-5">
+                    
+                    @for(items of cards; track $index){
+                        @if(active === $index){
+                            @if(active === 2){
+                                    <div class="col-md" *ngFor="let item of items; let i = index; let last = last">
+                                        @if(last){
+                                        <a href="#">
+                                            <div class="card h-100 border-0 text-bg-dark rounded-0 shadow-lg p-2 rounded-4 finance-card">
+                                             <div class="card-body">
+                                                <div class="card-title mb-0 d-flex align-items-center justify-content-between">
+                                                    <h4 class="fw-semibold">{{item.title}}</h4>
+                                                    <p class="btn btn-sm btn-primary fw-semibold" [ngStyle]="{backgroundColor:item.color}">{{item.number}}</p>
+                                                </div>
+                                                <p class="card-text pb-2 w-75 text-white">{{item.text}}</p>
+                                                <button class="btn btn-secondary btn-lg rounded-pill fw-semibold">Learn More</button>
+                                             </div>
+                                             <footer class="card-footer border-0 d-flex justify-content-between align-items-center">
+                                                <div class="crd-lnk d-flex justify-content-center align-items-center gap-3">
+                                                    <p style="font-size:20px" class="share">Share:</p>
+                                                    <div class="crd-lnk-icn d-flex justify-content-center align-items-center gap-2 pb-2">
+                                                        <button class="btn btn-sm btn-secondary rounded-circle fs-5"><i class="bi bi-twitter"></i></button>
+                                                        <button class="btn btn-sm btn-secondary rounded-circle fs-5"><i class="bi bi-facebook"></i></button>
+                                                        <button class="btn btn-sm btn-secondary rounded-circle fs-5"><i class="bi bi-pinterest"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="crd-fv">
+                                            <i class="bi bi-bookmark fs-4"></i>
+                                                </div>
+                                             </footer>
+                                            </div>
+                                         </a>
+                                        }
+                                        @else{
+                                            <a href="#">
+                                                <div class="card h-100 border-0 rounded-0 shadow-lg p-2 rounded-4">
+                                                    <div class="card-body">
+                                                                    <div class="card-title mb-0 d-flex align-items-center justify-content-between">
+                                                                        <h4 class="fw-semibold">{{item.title}}</h4>
+                                                                        <p class="btn btn-sm btn-primary fw-semibold" [ngStyle]="{
+                                                                              backgroundColor: item.color,
+                                                                        }">{{item.number}}</p>
+                                                                    </div>
+                                                                    <p class="card-text pb-2 w-75">
+                                                                        {{item.text}}
+                                                                    </p>
+                                                                <img [ngSrc]="item.image" [alt]="item.title" class="card-img-bottom position-relative object-fit-cover" style="height:200px" priority fill>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        }
+                                    </div>
+                                         
+                            }@else{
+                                <div class="col-md" *ngFor="let item of items; let i = index">
+                                 <a href="#">
+                                     <div class="card h-100 border-0 rounded-0 shadow-lg p-2 rounded-4">
+                                         <div class="card-body">
+                                                         <div class="card-title mb-0 d-flex align-items-center justify-content-between">
+                                                             <h4 class="fw-semibold">{{item.title}}</h4>
+                                                             <p class="btn btn-sm btn-primary fw-semibold" [ngStyle]="{
+                                                                   backgroundColor: item.color,
+                                                             }"> {{item.number}}</p>
+                                                         </div>
+                                                         <p class="card-text w-75">
+                                                             {{item.text}}
+                                                         </p>
+                                                     <img [ngSrc]="item.image" [alt]="item.title" class="card-img-bottom position-relative object-fit-cover" style="height:200px" priority fill>
+                                         </div>
+                                     </div>
+                                 </a>
+                                </div>
+                            }
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
