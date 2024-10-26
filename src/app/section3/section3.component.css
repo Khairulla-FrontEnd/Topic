@@ -36,12 +36,12 @@
     color:#717275;
     font-size:20px;
 }
-.col{
+.col-md{
     transition:all 0.3s ease;
     position:relative;
     bottom:0;
 }
-.col:hover{
+.col-md:hover{
     bottom:10px;
 }
 .finance-card{
@@ -79,6 +79,9 @@
         font-size:14px !important;
         padding-block:10px;
         padding-inline: 16px;
+    }
+    #section-3{
+        padding-block:40px;
     }
     .btn-lg{
         font-size:16px !important;

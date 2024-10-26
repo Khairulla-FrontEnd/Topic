@@ -1,0 +1,46 @@
+#section-6{
+    font-family:'Montserrat',sans-serif;
+    background-color:rgb(240, 248, 255);
+    padding-block:100px;
+}
+.section6-title{
+    font-size:46px;
+    font-weight: 700;
+}
+.site-title{
+    font-weight:600;
+font-size: 28px;
+}
+.site-text{
+    font-size:20px;
+    font-family:'Open Sans',sans-serif;
+    color:#717275;
+    padding-bottom:16px;
+}
+.site-phone span{
+    font-size: 20px;
+    font-family: 'Open Sans',sans-serif;
+    color:#717275;
+    margin-right:8px;
+    transition:all 0.3s ease;
+}
+.site-phone{
+    color: #80D0C7;
+    font-family: 'Open Sans';
+    transition: all 0.3s ease;
+}
+.site-email span{
+    font-size: 20px;
+    font-family: 'Open Sans',sans-serif;
+    color:#717275;
+    margin-right:8px;
+    transition:all 0.3s ease;
+}
+.site-email{
+    font-family: 'Open Sans';
+    color: #80D0C7;
+    transition: all 0.3s ease;
+}
+.site-email:hover,.site-phone:hover{
+    color: #13547a;
+}

@@ -1,0 +1,34 @@
+<section id="section-4">
+    <div class="section4-bg"></div>
+    <div class="container">
+        <h2 class="section4-title mb-4 text-center">How does it work?</h2>
+        <div class="small-container d-flex flex-column">
+            @for (item of timeline; track $index; let last = $last) {
+                <div class="timeline d-flex justify-content-center pt-3 gap-sm-5 gap-2">
+                    <div class="colf">
+                        <div class="timeline-icon">
+                            <i [class]="item.icon"></i>
+                        </div>
+                    </div>
+                    <div class="colf">
+                        <div class="timeline-container">
+                            <h5 class="timeline-title mb-md-3 mb-1">{{item.title}}</h5>
+                            <p class="timeline-text w-75">{{item.text}}</p>
+                        </div>
+                    </div>
+                    @if(!last){
+                        <div class="timeline-pattern">
+                            <div class="new-pattern"></div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+        <div class="section4-footer d-flex justify-content-center align-items-center gap-3">
+            <h5 class="footer-title">
+                Want to learn more?
+            </h5>
+            <a href="#" class="btn btn-lg btn-outline-primary fw-semibold rounded-pill footer-btn">Check out Youtube</a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,47 @@
+#section-5{
+    padding-block:100px;
+    font-family:'Montserrat',sans-serif;
+}
+.section5-title{
+    font-size:46px;
+    font-weight:700;
+}
+.accordion-button{
+    font-size:22px;
+    font-weight: 600;
+    color: rgb(19, 84, 122);
+    box-shadow: none;
+}
+.accordion-body{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #717275;
+}
+.accordion-body span{
+    color: rgb(113, 114, 117);
+    font-weight: 700;
+    font-size: 18px;
+}
+@media (max-width:992px) {
+    .section5-title{
+        font-size: 30px;
+    }
+    #section-5{
+        padding-block:40px;
+    }
+    .section5-title br{
+        display: none;
+    }
+}
+@media (max-width:576px){
+    .accordion-button{
+        font-size:16px;
+    }
+    .accordion-body{
+        font-size:14px;
+    }
+    .accordion-body span{
+        font-size: 14px;
+    }
+}
