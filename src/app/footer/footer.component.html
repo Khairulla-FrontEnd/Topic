@@ -1,0 +1,39 @@
+<footer id="footer">
+    <div class="footer-pattern position-absolute"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a class="footer-title-custom">
+                    <i class="bi bi-app-indicator"></i> Topic
+                </a>
+            </div>
+            @for (item of footerLinks; track $index) {
+                <div class="col">
+                    <h6 class="link-title-custom mb-3">{{item.title}}</h6>
+                    <ul class="link-container-custom">
+                        @for (link of item.link; track $index) {
+                            <li class="link-items-custom">{{link}}</li>
+                        }
+                    </ul>
+                </div>
+            }
+            <div class="col-sm mt-sm-0 mt-4">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Thai</a></li>
+                        <li><a class="dropdown-item" href="#">Myanmar</a></li>
+                        <li><a class="dropdown-item" href="#">Arabic</a></li>
+                    </ul>
+                </div>
+                <p class="copyright mt-lg-5 mt-2 mb-3">
+                    Copyright © 2048 Topic Listing Center. All rights reserved.<br>
+                    <br>
+                    Design:<a href="https://khairullaruzimov.vercel.app" target="_blanc">Khairulla</a>
+                </p>      
+            </div>
+        </div>
+    </div>
+</footer>

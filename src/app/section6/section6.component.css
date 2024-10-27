@@ -44,3 +44,33 @@ font-size: 28px;
 .site-email:hover,.site-phone:hover{
     color: #13547a;
 }
+@media (max-width:992px){
+    .section6-title{
+        font-size:30px;
+    }
+    #section-6{
+        padding-block:40px;
+    }
+    .site-title{
+        font-size:18px;
+    }
+    .site-text{
+        font-size:14px;
+        margin-bottom:0px;
+        padding-bottom: 0px;
+    }
+    .site-email span,.site-phone span{
+        font-size:14px;
+    }
+    .site-email,.site-phone{
+        font-size:12px;
+    }
+}
+@media (max-width:768px){
+    .site-text{
+        width:100% !important; 
+    }
+    .container{
+        overflow-x:hidden;
+    }
+}
